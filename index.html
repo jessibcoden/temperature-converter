@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>"Damn Temperature Converter"</title>
 	<link type="text/css" rel="stylesheet" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">	
 </head>
+
 <body>
 
 <div id="mainContainer">
-	<h1>Damn Temperature Converter</h1>
+		
+		<h1>Damn Temperature Converter</h1>
 
-	<h4>Temperature:<input type="text" name="tempInput" id="tempInput"></h4>
+	<div>
+		<h4 class="temperature">Temperature:</h4>
+		<input type="text" name="tempInput" id="tempInput"></h4>
+	</div>
 
-	<h4>Convert to:  Celsius<input type="radio" name="radioCelsius" id="radioCelsius"> Fahrenheit<input type="radio" name="radioFahrenheit" id="radioFahrenheit"></h4>
+	<div id="convert-inputs">
+		<h4>Convert to:</h4>
+		<h4>Celsius<input type="radio" name="radioCelsius" id="radioCelsius"></h4>
+		<h4>Fahrenheit<input type="radio" name="radioFahrenheit" id="radioFahrenheit"></h4>
+	</div>
 
-	<button type="button" id="convertTemp">Convert</button>
-
-	<h2 id="returnedTemp"></h2>
-
-	<input type="button" value="Reset" id="resetButton">
-	
+		<button type="button" id="convertTemp">Convert</button>
+		<h2 id="returnedTemp"></h2>
+		<input type="button" value="Reset" id="resetButton">
 
 </div>
 
 <script type="text/javascript" src="temp.js"></script>
 
 </body>
+
 </html>
