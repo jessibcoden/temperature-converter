@@ -9,6 +9,16 @@
 	font-family: 'Slabo 27px', serif;
 }
 
+#tempInput, .temperature {
+	display: inline;
+	margin-right: 3px;
+}
+
+#convert-inputs > h4 {
+	display: inline-block;
+	margin-right: 4px;
+}
+
 #returnedTemp {
 	background-color: black;
 	height: 100px;
@@ -16,5 +26,4 @@
 	margin: 21px 50px;
 	color: #67AB9F;
 	font-size: 80px;
-
 }

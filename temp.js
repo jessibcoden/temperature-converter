@@ -29,7 +29,7 @@ function checkIfEnterPressed (e) {
 function toCelsius(tempInput2){
 	var tempInput = parseInt(tempInput2.value); //convert input from a string to numerical value 
 	var celsius = (tempInput - 32) / 1.8; // run conversion formula on input
-	returnedTemp.innerHTML = (celsius.toFixed(2)); // return with 2 decimal places
+	returnedTemp.innerHTML = Math.round(celsius) + "&#176; C"; // return with 0 decimal places and degree symbol
 	celsius > 32 ? returnedTemp.style.color = "#bd0000" // return temp greater than 32 in red
       	: (celsius < 0 ? returnedTemp.style.color = "#a9c4eb" // return temp less than 0 in blue
          : returnedTemp.style.color = "#67ab9f"); // return all other temp in green
@@ -39,7 +39,7 @@ function toCelsius(tempInput2){
 function toFahrenheit (tempInput2){
 	var tempInput = parseInt(tempInput2.value);
 	var fahrenheit = (tempInput * 1.8) + 32;
-	returnedTemp.innerHTML = (fahrenheit.toFixed(2));
+	returnedTemp.innerHTML = Math.round(fahrenheit) + "&#176; F";
 	fahrenheit > 90 ? returnedTemp.style.color = "#bd0000"
        : (fahrenheit < 32 ? returnedTemp.style.color = "#a9c4eb"
          : returnedTemp.style.color = "#67ab9f");
