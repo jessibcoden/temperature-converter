@@ -1,7 +1,5 @@
 # Temperature Converter
 
-# Temperature Converter
-
 > Nashville Software School, Full-Stack Dev Bootcamp, Front-End Independant Exercise
 > 
 
@@ -26,17 +24,20 @@ Write a program that will convert a temperature from fahrenheit to celsius, or f
   the conversion.
   
   ![input alt tag](./images/tempConverter.png)
+
 7. If the temperature is greater than 90F/32C the color of 
   the converted temperature should be red.
   
   ![input alt tag](./images/tCHot.png)
+
 8. If the temperature is less than 32F/0C the color of 
   the converted temperature should be blue.
   
   ![input alt tag](./images/tCCold.png)
+
 9. For any other temperature, the color should be green.
 
-	![input alt tag](./images/tCOther.png)
+  ![input alt tag](./images/tCOther.png)
 
 
 ### How to run (Node must be installed on your machine):
